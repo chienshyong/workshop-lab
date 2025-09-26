@@ -1,0 +1,14 @@
+---
+- name: Create new user on all Cisco routers
+  hosts: cisco
+  gather_facts: false
+  vars:
+    new_user: default
+    new_password: default
+  tasks:
+    - name: Add new user with privilege 15
+      cisco.ios.ios_user:
+        username: "{{ new_user }}"
+        password: "{{ new_password }}"
+        privilege: 15
+        state: present
