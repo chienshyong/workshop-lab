@@ -1,0 +1,4 @@
+---
+- name: Display hostname, OS version, and model
+  debug:
+    msg: "Hostname: {{ ansible_hostname }}, OS: {{ ansible_distribution }} {{ ansible_distribution_version }}, Model: {{ ansible_product_name }}"
