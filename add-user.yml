@@ -8,7 +8,7 @@
   tasks:
     - name: Add new user with privilege 15
       cisco.ios.ios_user:
-        username: "{{ new_user }}"
+        name: "{{ new_user }}"
         configured_password: "{{ new_password }}"
         password_type: password
         update_password: always
