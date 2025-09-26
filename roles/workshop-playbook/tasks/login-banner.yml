@@ -2,5 +2,5 @@
 - name: Set login banner
   cisco.ios.ios_banner:
     banner: login
-    text: "Authorized Access Only!"
+    text: "I am a log"
     state: present

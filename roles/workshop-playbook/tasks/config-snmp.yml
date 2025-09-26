@@ -1,0 +1,12 @@
+- name: Configure SNMP server on Cisco IOS
+  cisco.ios.ios_snmp_server:
+    communities:
+      - name: public
+        acl: 10
+        rw: false
+      - name: private
+        acl: 10
+        rw: true
+    location: Datacenter-1
+    packetsize: 1024
+    state: merged
