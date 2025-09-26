@@ -1,2 +1,5 @@
 - name: "Task 1"
   import_tasks: gather-facts.yml
+
+- name: "Task 2"
+  import_tasks: login-banner.yml
