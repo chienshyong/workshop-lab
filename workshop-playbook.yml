@@ -1,8 +1,8 @@
 ---
 - name: workshop test
   hosts: cisco
-  gather_facts: false
+  gather_facts: true
   vars_files:
     - "group_vars/all.yml"
-  role:
-    - workshop-playbook
+  roles:
+    - workshop-playbook 
